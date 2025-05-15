@@ -11,7 +11,7 @@ test_img = 'Normal- (86).jpg'  # path to your test image
 results = model(test_img, show=True)  # show=True to display the result
 
 # Optional: save results
-results[0].save(filename='test_result.jpg')
+results[0].save(filename=test_img+'_result.jpg')  # save the result with a new name
 
 # img = cv2.imread('test_result.jpg')
 
