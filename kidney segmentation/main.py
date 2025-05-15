@@ -80,14 +80,6 @@ def train_yolo():
     best_path = os.path.join(weights_dir, "best.pt")
     last_path = os.path.join(weights_dir, "last.pt")
 
-    if os.path.exists(best_path):
-        torch.save(torch.load(best_path), "yolo_bonefracture_best.pt")
-        print("✅ Saved: yolo_bonefracture_best.pt")
-    elif os.path.exists(last_path):
-        torch.save(torch.load(last_path), "yolo_bonefracture_last.pt")
-        print("⚠️ Saved: yolo_bonefracture_last.pt (best.pt not available)")
-    else:
-        print("❌ No weights found to save manually.")
 
 if __name__ == "__main__":
     import multiprocessing
