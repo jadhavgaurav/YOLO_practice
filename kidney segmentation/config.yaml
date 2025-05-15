@@ -1,0 +1,6 @@
+path: 'D:/gaura/Project/YOLO object detection/kidney segmentation/data'
+train: images
+val: images
+
+names:
+  0: Stone
